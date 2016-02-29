@@ -1,0 +1,257 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 100%;
+	font-size: 100%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+}
+
+.title_box .container {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 100vh;
+
+	background: url(../images/quarter_self_portrait.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.title_box h1 {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+	letter-spacing: 0.2em;
+	font-family: "Helvetica Neue";
+	font-size: 48px;
+	font-weight: 100;
+}
+
+.nav {
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+}
+
+
+
+.nav a{
+	color: #5a5a5a;
+  	font-size: 14px;
+  	font-family: "Helvetica Neue";
+  	letter-spacing: 0.4em;
+}
+
+.nav ul {
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.8);
+    -webkit-box-shadow: 0 7px 6px -10px #777;
+       -moz-box-shadow: 0 7px 6px -10px #777;
+            box-shadow: 0 7px 6px -10px #777;
+}
+
+.nav li {
+	float: left;
+	width: 25%;
+}
+
+.nav a:link, a:visited {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.nav a:hover, a:active {
+    background-color: rgba(0,0,0,0.9);
+    color: rgba(255,255,255,0.9);
+}
+
+.main_box {
+	margin-top: 100vh;
+	padding: 0 12.5%;
+	overflow: auto;
+}
+
+#main_quote {
+	text-align: center;
+	font-size: 32px;
+	margin: 150px auto 150px auto;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+
+/*
+.main_box p {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 1.5;
+}
+*/
+
+.main_box h2 {
+	margin-top: 100px;
+	clear: both;
+}
+
+#social_box {
+    margin-bottom: 100px;
+}
+
+#skills_list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#skills_list span {
+    font-weight: bold;
+}
+
+.column_container {
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 1.5;
+}
+
+.column_3 {
+	height: 100%;
+	float: left;
+	padding-left: 3%;
+	padding-right: 3%;
+	width: 27.33%;
+	text-align: justify;
+}
+
+.column_2 {
+	height: 100%;
+	float: left;
+	padding-left: 3%;
+	padding-right: 3%;
+	width: 44%;
+	text-align: justify;
+}
+
+h3{
+	font-weight: normal;
+	letter-spacing: .3em;
+	font-size: 16px;
+}
+
+.social_objects {
+	width: 100%;
+	margin-top: 36px;
+	height: 100px;
+	text-align: center;
+}
+
+.social_object {
+	float: left;
+	height: 100%;
+	width: 20%;
+}
+
+.social_object .container {
+	margin-left: auto;
+	margin-right: auto;
+	height: 64px;
+	width: 64px;
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+.social_object .fa {
+	position: relative;
+  	top: 50%;
+  	-ms-transform: translateY(-50%); /* IE 9 */
+   	-webkit-transform: translateY(-50%); /* Safari */
+    transform: translateY(-50%);
+  	color: black;
+	/*max-height: 100%;
+	max-width: 100%;
+	height: 32px;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);*/
+}
+
+.social_object .container:hover {
+    border: 2px solid black;
+}
+
+
+
+
+button {
+	display: block;
+	margin: auto;
+	border: 1px solid black;
+	border-radius: 2px;
+	padding: 10px;
+	width: 100px;
+	text-transform: uppercase;
+	background-color: white;
+	margin-top: 24px;
+}
+
+button:hover {
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+}
+
+
+#class_graph {
+    height: 300px;
+    width: 100%;
+}
+
+
+
+#tooltip {
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+#tooltip.hidden {
+    display: none;
+}
+
+#tooltip p {
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 20px;
+}

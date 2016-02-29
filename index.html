@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A personal page for Matthew Thomas Stanley">
+        <title>Matthew Stanley</title>
+
+        <link rel="stylesheet" href="assets/font-awesome-4.3.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/styles/main_style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+        <script>
+            $(function() {
+                $('.title_box').height(35);
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html,body').animate({
+                            scrollTop: target.offset().top
+                            }, 1500);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <style>
+            .edge {
+                stroke: #ccc;
+                stroke-width: 1px;
+            }
+
+            .node circle {
+                
+            }
+
+            .node text {
+                font: 14px Helvetica;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title_box">
+            <div class="container">
+                <h1>// Matthew Stanley</h1>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="container">
+                <ul>
+                    <li><a href="#self_box">Self</a></li>
+                    <li><a href="#school_box">School</a></li>
+                    <li><a href="#skills_box">Skills</a></li>
+                    <li><a href="#social_box">Social</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="title_space"></div>
+        <div class="main_box">
+            <blockquote id="main_quote">
+                Stay hungry, stay foolish.
+            </blockquote>
+            <div id="self_box">
+                <h2>Self</h2>
+                <div class="column_container">
+                    <div class="column_3">
+                        <h3> 
+                            Computer science is my passion.
+                        </h3>
+                        <p>
+                            The incredible versatility of computer science never ceases to amaze me, 
+                            as a result I am always eager to expand my knowledge of computer science
+                            and apply it to solve new problems. 
+                        </p>
+                    </div>
+                    <div class="column_3">
+                        <h3> 
+                            Design, develop, and deploy.
+                        </h3>
+                        <p>
+                            I am interested in all aspects of creating effective solutions for problems.
+                            The fact that there are so many ways to solve one specific problem is wicked cool.
+                            Problem solving is <em>definitely</em> a creative process.
+                            A process that I wholeheartedly love.
+                        </p>
+                    </div>
+                    <div class="column_3">
+                        <h3> 
+                            Data! data! data!
+                        </h3>
+                        <p>
+                            The field of computer science that I find particularly awesome is Data Science.
+                            I love the idea of whipping large amounts of seemingly unrrelated data into shape
+                            to reveal something totally neat and novel. After all, every process boils down to 
+                            the transfer of information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="school_box">
+                <h2>School</h2>
+                <div class="column_container">
+                    <div class="column_2">
+                        <h3> 
+                            Middlebury College.
+                        </h3>
+                        <p>
+                            I did my undergraduate studies at a small liberal arts college, in a little town in Vermont
+                            called Middlebury. At Middlebury college I was exposed to a wide and varied 
+                            curriculum. I was a computer science major, with a mathematics minor, which 
+                            gave me a great introduction to the field. My final semesters at Middlebury were
+                            spent solely focused on computer science, developing a strong foundation.
+                        </p>
+                    </div>
+                    <div class="column_2">
+                        <h3> 
+                            Classes and curriculum.
+                        </h3>
+                        <div id="class_graph">
+                            <div id="tooltip" class="hidden">
+                                <p><span id="title">Class Title</span></p> 
+                                <p><span id="pre_reqs">Reqs</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skills_box">
+                <h2>Skills</h2>
+                <div class="column_container"> 
+                    <div class="column_2">
+                        <h3> 
+                            What I know.
+                        </h3>
+                        <ul id="skills_list">
+                            <li><span>Languages:</span> Python, Javascript, Java, C, HTML, CSS</li>
+                            <li><span>Frameworks:</span> flask, node.js, express.js, backbone.js</li>
+                            <li><span>APIs:</span> Twitter, WebGl</li>
+                            <li><span>Technologies:</span> Git, Unix, Linux</li>
+                        </ul>
+                    </div>
+                    <div class="column_2">
+                        <h3>
+                            What I've done.
+                        </h3>
+                        <p>
+                            <button type="button" onclick="location.href='./projects';">projects</button> 
+                            <button type="button" onclick="location.href='./resume';">resume</button> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="social_box">
+                <h2>Social</h2>
+                <div class="column_container">
+                <div class="social_objects">
+                    <div class="social_object">
+                        <a href="https://twitter.com/mstanleyth">
+                            <div class="container">
+                                <i class="fa fa-twitter fa-2x" class="logo" id="twitter_logo"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social_object">
+                        <a href="https://instagram.com/3geeky5me/">
+                            <div class="container">
+                                <i class="fa fa-instagram fa-2x" class="logo" id="instagram_logo"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social_object">
+                        <a href="https://github.com/mthstanley">
+                            <div class="container">
+                                <i class="fa fa-github fa-2x" class="logo" id="github_logo"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social_object">
+                        <a href="https://www.linkedin.com/pub/matthew-stanley/103/5a8/90b">
+                            <div class="container">
+                                <i class="fa fa-linkedin fa-2x" class="logo" id="linkedin_logo"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social_object">
+                        <a href="mailto:stanley.t.matthew@gmail.com">
+                            <div class="container">
+                                <i class="fa fa-envelope-o fa-2x" class="logo" id="mail_logo"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <br />
+        </footer> 
+        <script type="text/javascript" src="assets/js/classes_graph.js"></script>
+    </body>
+</html>
